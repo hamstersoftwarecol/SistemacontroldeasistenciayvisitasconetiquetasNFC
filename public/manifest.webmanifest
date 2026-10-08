@@ -1,0 +1,13 @@
+{
+    "name": "AsistenciaNFC",
+    "short_name": "Asistencia",
+    "description": "Control de asistencia y visitas con etiquetas NFC",
+    "start_url": "/panel",
+    "display": "standalone",
+    "background_color": "#f9fafb",
+    "theme_color": "#4f46e5",
+    "lang": "es",
+    "icons": [
+        { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+    ]
+}

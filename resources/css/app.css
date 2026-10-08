@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none !important;
+}
+
+@layer components {
+    .table-base {
+        @apply min-w-full divide-y divide-gray-200 text-sm;
+    }
+
+    .table-base thead th {
+        @apply whitespace-nowrap bg-gray-50 px-3 py-2.5 text-left text-xs font-semibold uppercase tracking-wide text-gray-500;
+    }
+
+    .table-base tbody td {
+        @apply whitespace-nowrap px-3 py-2.5 text-gray-700;
+    }
+
+    .table-base tbody tr {
+        @apply hover:bg-gray-50;
+    }
+
+    .prose-chat p {
+        @apply my-1.5;
+    }
+
+    .prose-chat ul {
+        @apply my-1.5 list-disc pl-5;
+    }
+
+    .prose-chat ol {
+        @apply my-1.5 list-decimal pl-5;
+    }
+
+    .prose-chat table {
+        @apply my-2 w-full border-collapse text-xs;
+    }
+
+    .prose-chat th,
+    .prose-chat td {
+        @apply border border-gray-200 px-2 py-1 text-left;
+    }
+
+    .prose-chat th {
+        @apply bg-gray-50 font-semibold;
+    }
+
+    .prose-chat strong {
+        @apply font-semibold;
+    }
+
+    .prose-chat code {
+        @apply rounded bg-gray-100 px-1 py-0.5 text-xs;
+    }
+
+    .prose-chat h1,
+    .prose-chat h2,
+    .prose-chat h3 {
+        @apply mb-1 mt-3 font-semibold;
+    }
+}
+
+@media print {
+    body {
+        @apply bg-white;
+    }
+
+    .table-base tbody td,
+    .table-base thead th {
+        @apply px-1.5 py-1 text-[10px];
+    }
+}
